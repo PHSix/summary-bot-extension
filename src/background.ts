@@ -40,8 +40,8 @@ chrome.runtime.onMessage.addListener(async (msg, sender) => {
   try {
     const { token, payload } = completeRequest.parse(msg);
     const ai = new OpenAI({
-      // baseURL: "https://openrouter.ai/api/v1",
-      baseURL: "https://api.deepseek.com",
+      baseURL: "https://openrouter.ai/api/v1",
+      // baseURL: "https://api.deepseek.com",
       apiKey: token,
       dangerouslyAllowBrowser: true,
     });
@@ -49,8 +49,8 @@ chrome.runtime.onMessage.addListener(async (msg, sender) => {
     const stream = await retry(
       () =>
         ai.chat.completions.create({
-          // model: "gpt-3.5-turbo-1106",
-          model: "deepseek-chat",
+          model: "gpt-3.5-turbo-1106",
+          // model: "deepseek-chat",
           messages: [
             {
               role: "user",
