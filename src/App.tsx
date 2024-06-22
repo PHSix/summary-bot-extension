@@ -65,7 +65,7 @@ function App() {
   }
 
   return (
-    <div className="w-full h-screen p-4 flex flex-col gap-3">
+    <div className="w-full h-screen p-4 flex flex-col gap-3 overflow-auto">
       <div className="text-blue-400">
         Let AI help you summarize the content of this page
       </div>
