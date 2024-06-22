@@ -25,6 +25,6 @@ pnpm build
 
 - [x] 测试不充分（第一次接触插件开发，debug 浪费了所有免费的 token 请求次数，所以我也不确定是否能跑）
 - [ ] 没有设置热重载（因为手上的开发环境是 wsl，等 linux 主机到了再测试）
-- [ ] 测试使用的是 deepseek 进行测试的，openrouter 的免费 api 已使用完（修改方法为申请 deepseek 的免费 token，并将`src/background.ts`里面的`baseURL`进行替换成`https://api.deepseek.com`，同时将 model 替换成`deepseek-chat`）
+- [ ] 测试使用的是 deepseek 进行测试的，openrouter 的免费 api 已使用完（修改方法为申请 deepseek 的免费 token，在`src/background.ts`里面的`baseURL`进行替换成`https://api.deepseek.com`，同时把 model 替换成`deepseek-chat`）
 
 # 后续 repo 跟进[summary-bot-extension](https://github.com/PHSix/summary-bot-extension)
